@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(255, 238, 221, 0.5) 0%, rgba(221, 238, 255, 0.5) 100%);
+    padding-top: 10vh;
+}
+
+img {
+    height: 20rem;
+    width: 20rem;
+    margin: 10rem;
+    border: 5px solid red;
+    background: white;
+}
+
+img + img {
+    border-color: orange;
+}
+
+svg {
+    background: white;
+    height: 20rem;
+    width: 20rem;
+    margin: 10rem;
+    border: 5px solid green;
+}
+
+polygon {
+    fill: rgb(240, 96, 0);
+}
+
+.stripes path {
+    fill: rgb(226, 188, 0);
+}
+
+.stinger, path {
+    transition: all 0.24s linear;
+    transform-origin: top center;
+}
+
+.eyes:hover path {
+    fill: #f00;
+}
+
+.stinger{
+    animation-name: sting;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sting {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    1000% {
+        transform: translateY(0px);
+    }
+}
