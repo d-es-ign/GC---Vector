@@ -40,6 +40,7 @@ So instead of paragraphs and headers you will have things like circles and paths
 </svg>
 ```
 The `d` attribute here takes a series of [Path Commands](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d#path_commands), which results in the following shape:
+![heart](heart.svg "Heart")
 
 ### Including SVG
 
