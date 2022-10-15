@@ -45,7 +45,10 @@ polygon {
 }
 
 .eyes:hover path {
-    fill: #f00;
+  fill: rgb(226, 188, 0);
+}
+.antenna:hover path {
+    fill: #d82036;
 }
 
 .stinger{
